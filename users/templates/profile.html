@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+{# user는 장고 자체에 내장되있는 것이라서 pyBlog/views.py 에 context처럼 object로 넘겨주는 것이 아님#}
+    <h1>{{ user.username }}</h1>
+{% endblock content %}
