@@ -117,6 +117,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# 업로드 파일 저장소 데스크탑?
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# 업로드 파일 저장소 브라우저
+MEDIA_URL = '/media/'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'home'
