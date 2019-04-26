@@ -14,7 +14,7 @@ def register(request):
             return redirect('login')
     else:
         form = UserRegisterForm()
-    return render(request, 'register.html', {'form': form})
+    return render(request, 'users/register.html', {'form': form})
 
 
 @login_required  # user 가 반드시 로그인 되있어야 페이지 확인 가능
@@ -38,4 +38,4 @@ def profile(request):
         'p_form': p_form
     }
 
-    return render(request, 'profile.html', context)
+    return render(request, 'users/profile.html', context)
