@@ -31,7 +31,7 @@ class UserPostListView(ListView):
 
     def get_queryset(self):
         user = get_object_or_404(User, username=self.kwargs.get('username'))
-        return Post.objects.filter(author=user).order_by('-date_posted') # 최신 게시글이 상단에 위치
+        return Post.objects.filter(author=user).order_by('-date_posted') # 최신 게시글 순으로 정렬
 
 
 class PostDetailView(DetailView):

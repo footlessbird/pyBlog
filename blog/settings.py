@@ -127,3 +127,17 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'home'
 
 LOGIN_URL = 'login'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.getenv('EMAIL_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASS')
+
+# 터미널(앱 디렉토리 eg., /PycharmProjects/blog/)에서 아래과 같이 입력 .bash.profile에 입력시 'none' returned
+# export EMAIL_USER="YOUR_EMAIL"
+# export EMAIL_PASS="YOUR_APP_PASSWORD"
+
+print(EMAIL_HOST_USER)
+print(EMAIL_HOST_PASSWORD)
