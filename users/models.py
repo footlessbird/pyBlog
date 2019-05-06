@@ -12,8 +12,8 @@ class Profile(models.Model):
         return f'{self.user.username} Profile'
 
     # 모델이 저장된 후 실행
-    def save(self):
-        super().save()
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
 
         img = Image.open(self.image.path)
 
