@@ -2,10 +2,13 @@
 
 ***http://172.104.217.113***
 
-A blog web app buit with Django.
-```
-features = [ RESTful CRUD, file uploads, pagination, password reset (Google SMTP) ] 
-```
+A blog web app powered by Django.
+
+* RESTful CRUD
+* File uploads 
+* Pagination
+* Password reset (Google SMTP) 
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -26,7 +29,7 @@ Ubuntu 19.04 cloud server with Apache2 using Linode (https://www.linode.com/)
 
 ## Built With
 
-* [Django 2.1](https://docs.djangoproject.com/en/2.2/releases/2.1/)
+* [Django2.1](https://docs.djangoproject.com/en/2.2/releases/2.1/)
 * [SQLite3](https://www.sqlite.org/draft/version3.html)
 * [Deployment](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/)
 * [Apache2](https://help.ubuntu.com/lts/serverguide/httpd.html)
